@@ -76,27 +76,6 @@ public class ProceduralCube : MonoBehaviour {
 
             new Vector2(0, 0),
             new Vector2(0, 1),
-            /*new Vector2(1, 1),
-
-            new Vector2(0, 0),
-            new Vector2(0, 1),
-            new Vector2(1, 0),
-
-            new Vector2(0, 0),
-            new Vector2(0, 1),
-            new Vector2(1, 1),
-
-            new Vector2(0, 0),
-            new Vector2(0, 1),
-            new Vector2(1, 0),
-
-            new Vector2(0, 0),
-            new Vector2(0, 1),
-            new Vector2(1, 1),
-
-            new Vector2(0, 0),
-            new Vector2(0, 1),
-            new Vector2(1, 0),*/
         };
 
         filter = gameObject.AddComponent<MeshFilter>();
