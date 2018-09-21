@@ -56,8 +56,7 @@ Shader "Shader Forge/shader1" {
                 float3 lightColor = _LightColor0.rgb;
 ////// Lighting:
                 UNITY_LIGHT_ATTENUATION(attenuation, i, i.posWorld.xyz);
-                float node_6136 = max(0,dot(lightDirection,i.normalDir));
-                float3 finalColor = ((node_6136*_LightColor0.rgb)*attenuation);
+                float3 finalColor = ((max(0,dot(lightDirection,i.normalDir))*_LightColor0.rgb)*attenuation);
                 return fixed4(finalColor,1);
             }
             ENDCG
@@ -108,8 +107,7 @@ Shader "Shader Forge/shader1" {
                 float3 lightColor = _LightColor0.rgb;
 ////// Lighting:
                 UNITY_LIGHT_ATTENUATION(attenuation, i, i.posWorld.xyz);
-                float node_6136 = max(0,dot(lightDirection,i.normalDir));
-                float3 finalColor = ((node_6136*_LightColor0.rgb)*attenuation);
+                float3 finalColor = ((max(0,dot(lightDirection,i.normalDir))*_LightColor0.rgb)*attenuation);
                 return fixed4(finalColor * 1,0);
             }
             ENDCG
